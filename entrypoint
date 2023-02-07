@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [[ $SWOOLE == "1" ]]
+then
+  php -d variables_order=EGPCS public/index.php;
+else
+  tail -f /dev/null
+fi
